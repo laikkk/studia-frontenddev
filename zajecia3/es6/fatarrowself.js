@@ -23,3 +23,9 @@ let family = {
 }
 
 console.log(family.sayHello());
+
+var kamil = "Kamil"
+
+console.log('name ${kamil}')
+console.log(`name ${kamil}`) // tylko z ` dzial $ {}
+console.log("name ${kamil}")
