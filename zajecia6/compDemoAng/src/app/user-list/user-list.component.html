@@ -1,0 +1,14 @@
+<p>
+  user-list works!
+
+</p>
+<p>Selected user: {{selectedUser}}</p>
+
+<!--<li *ngFor="let user2 of users" (click)="onSelect(user2)">
+  <span class="badge">{{user2.id}}</span> {{user2}}
+  <app-user-info [user]="user2"></app-user-info>
+</li>
+
+<app-user-info [user]="out"></app-user-info>-->
+
+<app-user-info *ngFor="let user2 of users" [user]="user2" (clickEmitter)="userClicked($event)"></app-user-info>
